@@ -1,18 +1,18 @@
 # HTML5 Custom Validation Messages
 
-HTML5 form validation error messages are supplied by the browser but with this simple jQuery plugin you can change them to what ever you need. Some good examples of use would be for translations or bring the browser messages into line with your server-side messages.
+HTML5 form validation error messages are supplied by the browser but with this simple jQuery plugin you can customize them to your hearts content. A couple of good examples of when you might want to use this plug would be for translating the messages or to bring the browser messages into line with your server-side messages.
 
-You can define which specific form you would like to add your custom messages and you have several option on how to assign the messages them selves.
+You can define which form you would like to add your custom messages to and you also have several options on how to assign the messages themselves.
 
 ## Quick Start
 
-1. Grab a copy of jquery.html5cvm.js
+1. Grab a copy of **jquery.html5cvm.js**
 
-2. Included the jquery.html5cvm.js script on your page.
+2. Included the **jquery.html5cvm.js** script on your page.
 
         <script type="text/JavaScript" src="path/to/jquery.html5cvm.js" />
 
-3. Call the plugin with the ID of the form you wish to add custom messages to like this.
+3. Call the plugin with the **ID** of the form you wish to add custom messages to like this.
 
         $('#form-id').html5cvm();
 
