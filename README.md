@@ -6,13 +6,13 @@ You can define which specific form you would like to add your custom messages an
 
 ## Quick Start
 
-Grab the latest [download](https://github.com/javanto/civem.js/downloads)
+1. Grab a copy of jquery.html5cvm.js
 
-Included the jquery.html5cvm.js script on your page.
+2. Included the jquery.html5cvm.js script on your page.
 
         <script type="text/JavaScript" src="path/to/jquery.html5cvm.js" />
 
-Call the plugin with the ID of the form you wish to add custom messages to like this.
+3. Call the plugin with the ID of the form you wish to add custom messages to like this.
 
         $('#form-id').html5cvm();
 
@@ -20,7 +20,7 @@ Call the plugin with the ID of the form you wish to add custom messages to like 
 
 ### Option 1
 
-You can add data attributes to your individual **input** , **textarea** and or **select** fields to specifically target a message to a field/
+You can add data attributes to your individual **input** , **textarea** and or **select** fields to specifically target a message to a field.
 
 #### Example
 
@@ -36,21 +36,21 @@ You can add data attributes to your individual **input** , **textarea** and or *
 
 You have the follow options:
 
-1. data-error-value-missing
+1. **data-error-value-missing**
     - If the element has no value but is a required field.
-2. data-error-type-mismatch
+2. **data-error-type-mismatch**
     - If the element’s value doesn't match its type attribute.
-3. data-error-pattern-mismatch
+3. **data-error-pattern-mismatch**
     - If the element’s value doesn't match its pattern attribute.
-4. data-error-too-long
+4. **data-error-too-long**
     - If the element’s value exceeds its maxlength attribute.
-5. data-error-range-underflow
+5. **data-error-range-underflow**
     - If the element’s value is lower than its min attribute.
-6. data-error-range-overflow
+6. **data-error-range-overflow**
     - If the element’s value is higher than its max attribute.
-7. data-error-step-mismatch
+7. **data-error-step-mismatch**
     - If the element’s value is invalid per its step attribute.
-8. data-error-generic
+8. **data-error-generic**
     - This is a fall back generic message that you can provided.
 
 
@@ -69,26 +69,26 @@ $('#form-id').html5cvm({
 
 You have the follow options:
 
-1. valueMissing
+1. **valueMissing**
     - If the element has no value but is a required field.
-2. typeMismatch
+2. **typeMismatch**
     - If the element’s value doesn't match its type attribute.
-3. patternMismatch
+3. **patternMismatch**
     - If the element’s value doesn't match its pattern attribute.
-4. tooLong
+4. **tooLong**
     - If the element’s value exceeds its maxlength attribute.
-5. rangeUnderflow
+5. **rangeUnderflow**
     - If the element’s value is lower than its min attribute.
-6. rangeOverflow
+6. **rangeOverflow**
     - If the element’s value is higher than its max attribute.
-7. stepMismatch
+7. **stepMismatch**
     - If the element’s value is invalid per its step attribute.
-8. generic
+8. **generic**
     - This is a fall back generic message that you can provided.
 
 
 ## License
 
 ### Dual licensed under the MIT and GPL licenses:
-[MIT]http://www.opensource.org/licenses/mit-license.php
-[GPL]http://www.gnu.org/licenses/gpl.html
+[MIT](http://www.opensource.org/licenses/mit-license.php)
+[GPL](http://www.gnu.org/licenses/gpl.html)
