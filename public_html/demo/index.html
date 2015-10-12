@@ -1,0 +1,183 @@
+<html>
+    <head>
+        <title>HTML5 Custom Validation Messages</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- jQuery -->
+        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+
+        <!-- UIkit Note: not needed if you are already using UIkit-->
+        <link href="uikit-2.22.0/css/uikit.almost-flat.min.css" rel="stylesheet">
+        <script type="text/javascript" src="uikit-2.22.0/js/uikit.min.js"></script>
+
+        <!-- HTML5 Custom Validation Messages plugin -->
+        <script type="text/javascript" src="js/jquery.html5cvm.min.js"></script>
+
+        <!-- UIkit Notify plugin -->
+        <script type="text/javascript" src="js/jquery.uikitnotify.js"></script>
+
+        <script type="text/javascript">
+            $("document").ready(function () {
+
+                //HTML5 Custom Validation Messages demo
+                $('#html5cvm-demo').html5cvm({
+                    generic: 'Forgotten something?',
+                    typeMismatch: "Please enter a valid email!"
+                });
+
+                //UIkit Notify demo
+                $('#html5cvm-demo').submit(function (e) {
+                    e.preventDefault();
+                    $.uikitNotify('Your information is being processed!', {
+                        offset: {from: 'top', amount: 250},
+                        title: 'Start',
+                        align: 'center'
+                    });
+                    //lets delay the submitted function a bit
+                    setTimeout(submitted, 4000);
+                });
+
+                //UIkit Notify demo
+                function submitted() {
+                    //form successfully submitted
+                    $.uikitNotify('You did it, you passed the validation test!', {
+                        offset: {from: 'top', amount: 250},
+                        title: 'Finish',
+                        align: 'center',
+                        type: 'success',
+                        delay: '5000'
+                    });
+                    //reset form fields
+                    $("#html5cvm-demo")[0].reset();
+                }
+
+            });
+
+        </script>
+    </head>
+    <body>
+        <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom">
+            <div class="uk-grid" data-uk-grid-margin="">
+                <div class="uk-width-1-1 uk-text-center">
+                    <h1 class="uk-heading-large">jQuery HTML5</h1>
+                    <p class="uk-text-large">Custom Validation Messages</p>
+                </div>
+            </div>
+            <hr class="uk-grid-divider">
+            <div class="uk-grid" data-uk-grid-margin="">
+                <div class="uk-width-medium-2-3">
+                    <div class="uk-panel uk-panel-header">
+                        <div class="uk-alert"><i class="uk-icon-bullhorn"></i> Try out the form below to see the custom messages in action.</div>
+                        <form class="uk-form uk-form-stacked" id="html5cvm-demo" role="form" name="html5cvm-demo" method="post" action="#" autocomplete="off">
+                            <div class="uk-grid">
+                                <div class="uk-width-1-2">
+                                    <div class="uk-form-row">
+                                        <label class="uk-form-label">Your Name</label>
+                                        <div class="uk-form-controls">
+                                            <div class="uk-form-icon">
+                                                <i class="uk-icon-user"></i>
+                                                <input 
+                                                    type="text" 
+                                                    id="name" 
+                                                    class="uk-width-1-1 uk-form-width-large"
+                                                    placeholder="Please enter your name" 
+                                                    required="required" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-form-row">
+                                        <label class="uk-form-label">Your Email</label>
+                                        <div class="uk-form-controls">
+                                            <div class="uk-form-icon">
+                                                <i class="uk-icon-envelope"></i>
+                                                <input 
+                                                    type="email" 
+                                                    id="email"
+                                                    class="uk-width-1-1 uk-form-width-large"
+                                                    placeholder="Please enter your email" 
+                                                    required="required"
+                                                    data-error-type-mismatch="Sorry only valid email addresses allowed! Please try again" 
+                                                    data-error-value-missing="You seem to have forgotten to enter your email!">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-form-row">
+                                        <label class="uk-form-label">Department</label>
+                                        <div class="uk-form-controls">
+
+                                            <select 
+                                                id="departments" 
+                                                name="departments" 
+                                                class="uk-width-1-1 uk-form-width-large" 
+                                                required="required"
+                                                data-error-value-missing="You seem to have forgotten to pick a department!" >
+                                                <option value="" selected="">Select Department:</option>
+                                                <option value="sales">Sales</option>
+                                                <option value="repair">Repair</option>
+                                                <option value="support">Support</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-2">
+                                    <div class="uk-form-row">
+                                        <label class="uk-form-label">Your Message</label>
+                                        <div class="uk-form-controls">
+                                            <textarea                                             
+                                                name="message" 
+                                                id="message" 
+                                                class="uk-width-1-1" 
+                                                rows="8" 
+                                                cols="25"
+                                                required="required"
+                                                placeholder="Please enter your message"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="uk-form-row">
+                                        <div class="uk-form-controls uk-text-right">
+                                            <button class="uk-button uk-button-primary">Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="uk-width-medium-1-3">
+                    <div class="uk-panel uk-panel-box uk-panel-box-secondary">
+                        <h3 class="uk-panel-title">Demo Information</h3>
+                        <dl>
+                            <dt>Name Field</dt>
+                            <dd>The Name field's message is coming from the plugin options.</dd>
+                            <dt>Email Field</dt>
+                            <dd>The Email field's messages are coming from the field's data attributes.</dd>
+                            <dt>Departments Field</dt>
+                            <dd>The Department field's message is coming from the field's data attributes.</dd>
+                            <dt>Message Field</dt>
+                            <dd>The Message field's message is coming from the plugin options.</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <hr class="uk-grid-divider">
+        </div>
+        <div class="tm-footer uk-margin-bottom">
+            <div class="uk-container uk-container-center uk-text-center">
+
+                <ul class="uk-subnav uk-subnav-line uk-flex-center">
+                    <li><a href="https://github.com/CoalaWeb/jquery-html5cvm">GitHub</a></li>
+                    <li><a href="https://github.com/CoalaWeb/jquery-html5cvm/issues">Issues</a></li>
+                    <li><a href="https://github.com/CoalaWeb/jquery-html5cvm/CHANGELOG.md">Changelog</a></li>
+                    <li><a href="https://twitter.com/CoalaWeb">Twitter</a></li>
+                </ul>
+
+                <div class="uk-panel">
+                    <p>Created by <a href="http://coalaweb.com/">CoalaWeb</a> with the awesome power of <a href="http://www.yootheme.com">jQuery</a> and <a href="http://www.yootheme.com">UIkit</a><br>Dual licensed under the <a href="http://www.gnu.org/licenses/gpl.">GPL</a> and <a href="http://www.opensource.org/licenses/mit-license.php">MIT</a> licenses</p>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
