@@ -1,6 +1,6 @@
 ## Change Log
 
-#### Version 1.0.0 Oct 2015
+#### Version 1.0 Oct 2015
 
 #### jQuery HTML5 Custom Validation Messages plugin
 - **(N)** Initial release

@@ -1,14 +1,13 @@
 # HTML5 Custom Validation Messages
 
-HTML5 form validation error messages are supplied by the browser but with this simple jQuery plugin you can customize them to your hearts content. A couple of good examples of when you might want to use this plug would be for translating the messages or to bring the browser messages into line with your server-side messages.
+HTML5 form validation error messages are supplied by the browser but with this simple jQuery plugin you can customize them to your hearts content. A couple of good examples of when you might want to do this could be for translation purposes or to bring them into line with your server-side messages.
 
-You can define which form you would like to add your custom messages to and you also have several options on how to assign the messages themselves.
+You can define which form you would like to add your custom messages to as well as several options on how to assign the messages themselves.
 
 ## Quick Start
 
-1. Grab a copy of **jquery.html5cvm.js**
-
-2. Included the **jquery.html5cvm.js** script on your page.
+1. Grab a copy
+2. Included the plugin on your page like this.
 
         <script type="text/JavaScript" src="path/to/jquery.html5cvm.js" />
 
@@ -86,9 +85,19 @@ You have the follow options:
 8. **generic**
     - This is a fall back generic message that you can provided.
 
+## Tested
+
+### jQuery
+-   **jQuery:** 1.11.3
+
+### Browsers
+-   **Firefox:** 41.0.1
+-   **Chrome:** 45.0.2454.101
+-   **Opera:** 32.0.1948.69
+-   **IE:** 11.0.9600.18015
 
 ## License
 
-### Dual licensed under the MIT and GPL licenses:
-[MIT](http://www.opensource.org/licenses/mit-license.php)
-[GPL](http://www.gnu.org/licenses/gpl.html)
+Dual licensed under the [MIT](http://www.opensource.org/licenses/mit-license.php) and [GPL](http://www.gnu.org/licenses/gpl.html) licenses:
+
+
