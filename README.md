@@ -6,10 +6,10 @@ You can define which form you would like to add your custom messages to as well 
 
 ## Quick Start
 
-1. Grab a copy
+1. Grab a copy.
 2. Included the plugin on your page like this.
 
-        <script type="text/JavaScript" src="path/to/jquery.html5cvm.js" />
+        <script type="text/JavaScript" src="path/to/jquery.html5cvm.min.js" />
 
 3. Call the plugin with the **ID** of the form you wish to add custom messages to like this.
 
@@ -19,7 +19,7 @@ You can define which form you would like to add your custom messages to as well 
 
 ### Option 1
 
-You can add data attributes to your individual **input** , **textarea** and or **select** fields to specifically target a message to a field.
+You can add **data** attributes to your individual **input** fields to specifically target a message.
 
 #### Example
 
@@ -33,7 +33,7 @@ You can add data attributes to your individual **input** , **textarea** and or *
     data-error-value-missing="You seem to have forgotten to enter your email!">
 ```
 
-You have the follow options:
+#### You have the follow options:
 
 1. **data-error-value-missing**
     - If the element has no value but is a required field.
@@ -66,7 +66,7 @@ $('#form-id').html5cvm({
 });
 ```
 
-You have the follow options:
+#### You have the follow options:
 
 1. **valueMissing**
     - If the element has no value but is a required field.
