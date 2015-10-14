@@ -115,4 +115,4 @@ Dual licensed under the [MIT](http://www.opensource.org/licenses/mit-license.php
 
 ## <a name="issues"></a>Issues
 
-Do you have an issue? Found a bug? Want to request a new feature? Then drop and create an [issue](https://github.com/CoalaWeb/jquery-html5cvm/issues).
+Do you have an issue? Found a bug? Want to request a new feature? Then create a new issue [here](https://github.com/CoalaWeb/jquery-html5cvm/issues).
