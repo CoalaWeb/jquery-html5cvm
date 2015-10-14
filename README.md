@@ -1,10 +1,22 @@
-# HTML5 Custom Validation Messages
+## Table of Contents
+
+1.  [Intro](#intro)
+2.  [Quick Start](#qstart)
+3.  [Adding Messages](#adding)
+    -   [Individual Fields](#individual)
+    -   [Plugin Options](#plugin)
+5.  [Tested](#tested)
+6.  [License](#license)
+
+## <a name="intro"></a>Intro
 
 HTML5 form validation error messages are supplied by the browser but with this simple jQuery plugin you can customize them to your hearts content. A couple of good examples of when you might want to do this could be for translation purposes or to bring them into line with your server-side messages.
 
-You can define which form you would like to add your custom messages to as well as several options on how to assign the messages themselves.
+### Important Info
 
-## Quick Start
+You can define by **ID** which form you would like to add your custom messages to as well as several options on how to assign the messages themselves.
+
+## <a name="qstart"></a>Quick Start
 
 1. Grab a copy.
 2. Included the plugin on your page like this.
@@ -15,9 +27,9 @@ You can define which form you would like to add your custom messages to as well 
 
         $('#form-id').html5cvm();
 
-## Adding Messages
+## <a name="qstart"></a>Adding Messages
 
-### Option 1
+### <a name="individual"></a>Option 1 \[Individual Fields\]
 
 You can add **data** attributes to your individual **input** fields to specifically target a message.
 
@@ -53,7 +65,7 @@ You can add **data** attributes to your individual **input** fields to specifica
     - This is a fall back generic message that you can provided.
 
 
-### Option 2
+### <a name="plugin"></a>Option 2 \[Plugin Options\]
 
 Maybe you have a large form and you would rather define a custom message to be used through out it. You can achieve this by defining the options when you call the plugin.
 
@@ -85,7 +97,7 @@ $('#form-id').html5cvm({
 8. **generic**
     - This is a fall back generic message that you can provided.
 
-## Tested
+## <a name="tested"></a>Tested
 
 ### jQuery
 -   **jQuery:** 1.11.3
@@ -96,7 +108,7 @@ $('#form-id').html5cvm({
 -   **Opera:** 32.0.1948.69
 -   **IE:** 11.0.9600.18015
 
-## License
+## <a name="license"></a>License
 
 Dual licensed under the [MIT](http://www.opensource.org/licenses/mit-license.php) and [GPL](http://www.gnu.org/licenses/gpl.html) licenses:
 
