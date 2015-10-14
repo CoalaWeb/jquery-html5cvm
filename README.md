@@ -5,8 +5,9 @@
 3.  [Adding Messages](#adding)
     -   [Individual Fields](#individual)
     -   [Plugin Options](#plugin)
-5.  [Tested](#tested)
-6.  [License](#license)
+4.  [Tested](#tested)
+5.  [License](#license)
+6.  [Issues?](#issues)
 
 ## <a name="intro"></a>Intro
 
@@ -18,7 +19,7 @@ You can define by **ID** which form you would like to add your custom messages t
 
 ## <a name="qstart"></a>Quick Start
 
-1. Grab a copy.
+1. Grab a [copy](https://github.com/CoalaWeb/jquery-html5cvm).
 2. Included the plugin on your page like this.
 
         <script type="text/JavaScript" src="path/to/jquery.html5cvm.min.js" />
@@ -99,10 +100,10 @@ $('#form-id').html5cvm({
 
 ## <a name="tested"></a>Tested
 
-### jQuery
+#### jQuery
 -   **jQuery:** 1.11.3
 
-### Browsers
+#### Browsers
 -   **Firefox:** 41.0.1
 -   **Chrome:** 45.0.2454.101
 -   **Opera:** 32.0.1948.69
@@ -112,4 +113,6 @@ $('#form-id').html5cvm({
 
 Dual licensed under the [MIT](http://www.opensource.org/licenses/mit-license.php) and [GPL](http://www.gnu.org/licenses/gpl.html) licenses:
 
+## <a name="issues"></a>Issues
 
+Do you have an issue? Found a bug? Want to request a new feature? Then drop and create an [issue](https://github.com/CoalaWeb/jquery-html5cvm/issues).
