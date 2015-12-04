@@ -11,7 +11,7 @@
 
 ## <a name="intro"></a>Intro
 
-HTML5 form validation error messages are supplied by the browser but with this simple jQuery plugin you can customize them to your hearts content. A couple of good examples of when you might want to do this could be for translation purposes or to bring them into line with your server-side messages.
+HTML5 form validation error messages are supplied by the browser but with this simple jQuery plugin you can customize them to your hearts content. A couple of good examples of when you might want to do this are for translation purposes or to bring them into line with your server-side messages.
 
 ### Important Info
 
